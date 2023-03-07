@@ -1,12 +1,8 @@
 import { FC } from "react"
 
 type Props = {
-    type: 'submit'
-    isPrimary?: boolean
-    text: string
-} | {
-    type: 'button'
-    onClick: () => void
+    type: 'button' | 'submit'
+    onClick: (() => void) | undefined
     isPrimary?: boolean
     text: string
 }

@@ -178,7 +178,7 @@ const Modal: FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
                   </div>
                   <div className="mt-4 btn-group justify-end flex">
                     <Button type="button" text="Cancel" onClick={closeModal} />
-                    <Button type="submit" isPrimary text="Create" />
+                    <Button type="submit" isPrimary text="Create" onClick={undefined} />
                   </div>
                 </form>
               </Dialog.Panel>
